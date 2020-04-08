@@ -1,0 +1,156 @@
+[08/апр/2020:19:04:56,344] DEBUG MldhtService: <INFO> Starting DHT on port 49001
+[08/апр/2020:19:04:56,488] DEBUG MldhtService: <INFO> DNS lookupg for router.silotis.usfailed: router.silotis.us
+[08/апр/2020:19:04:56,744] DEBUG MldhtService: Filtering addresses to bind DHT server to.. Checking /0.0.0.0.. Could use: false
+[08/апр/2020:19:04:56,745] DEBUG MldhtService: Filtering addresses to bind DHT server to.. Checking /127.0.0.1.. Could use: false
+[08/апр/2020:19:04:56,745] DEBUG MldhtService: Filtering addresses to bind DHT server to.. Checking /192.168.218.63.. Could use: true
+[08/апр/2020:19:04:56,745] DEBUG MldhtService: Filtering addresses to bind DHT server to.. Checking /192.168.56.1.. Could use: false
+[08/апр/2020:19:04:56,852] DEBUG MldhtService: <INFO> Starting RPC Server
+[08/апр/2020:19:05:03,970] ERROR MldhtService: Unexpected DHT error
+java.net.SocketException: Network dropped connection on reset: no further information
+	at sun.nio.ch.DatagramChannelImpl.receive0(Native Method)
+	at sun.nio.ch.DatagramChannelImpl.receiveIntoNativeBuffer(DatagramChannelImpl.java:414)
+	at sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:392)
+	at sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:345)
+	at lbms.plugins.mldht.kad.RPCServer$SocketHandler.readEvent(RPCServer.java:710)
+	at lbms.plugins.mldht.kad.RPCServer$SocketHandler.selectionEvent(RPCServer.java:697)
+	at lbms.plugins.mldht.utils.NIOConnectionManager.processSelected(NIOConnectionManager.java:83)
+	at lbms.plugins.mldht.utils.NIOConnectionManager.selectLoop(NIOConnectionManager.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[08/апр/2020:19:05:04,305] ERROR MldhtService: Unexpected DHT error
+java.net.SocketException: Network dropped connection on reset: no further information
+	at sun.nio.ch.DatagramChannelImpl.receive0(Native Method)
+	at sun.nio.ch.DatagramChannelImpl.receiveIntoNativeBuffer(DatagramChannelImpl.java:414)
+	at sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:392)
+	at sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:345)
+	at lbms.plugins.mldht.kad.RPCServer$SocketHandler.readEvent(RPCServer.java:710)
+	at lbms.plugins.mldht.kad.RPCServer$SocketHandler.selectionEvent(RPCServer.java:697)
+	at lbms.plugins.mldht.utils.NIOConnectionManager.processSelected(NIOConnectionManager.java:83)
+	at lbms.plugins.mldht.utils.NIOConnectionManager.selectLoop(NIOConnectionManager.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[08/апр/2020:19:05:05,404] DEBUG MldhtService: <ERROR> received non-response [ Method:FIND_NODE Type:ERR_MSG MessageID:0x1F74364279A0/�t6By�   code:202 errormsg: 'Server Error' id:null] in response to request:  Method:FIND_NODE Type:REQ_MSG MessageID:0x1F74364279A0/�t6By�  targetKey:385018E5 A30460A2 7720CA02 2C05AFC1 8A4BDE91
+[08/апр/2020:19:05:05,405] DEBUG MldhtService: <ERROR> Error [202] from: /198.27.64.17:6881 Message: "Server Error"
+[08/апр/2020:19:05:13,682] ERROR MldhtService: Unexpected DHT error
+java.net.SocketException: Network dropped connection on reset: no further information
+	at sun.nio.ch.DatagramChannelImpl.receive0(Native Method)
+	at sun.nio.ch.DatagramChannelImpl.receiveIntoNativeBuffer(DatagramChannelImpl.java:414)
+	at sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:392)
+	at sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:345)
+	at lbms.plugins.mldht.kad.RPCServer$SocketHandler.readEvent(RPCServer.java:710)
+	at lbms.plugins.mldht.kad.RPCServer$SocketHandler.selectionEvent(RPCServer.java:697)
+	at lbms.plugins.mldht.utils.NIOConnectionManager.processSelected(NIOConnectionManager.java:83)
+	at lbms.plugins.mldht.utils.NIOConnectionManager.selectLoop(NIOConnectionManager.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[08/апр/2020:19:05:15,576] DEBUG MldhtService: <INFO> Estimator: new estimate:9 raw:3.2558620792455892 error:0.6600004381699742
+[08/апр/2020:19:05:16,506] DEBUG MldhtService: <ERROR> received non-response [ Method:FIND_NODE Type:ERR_MSG MessageID:0x3CBFF25908EB/<��Y��   code:202 errormsg: 'Server Error' id:null] in response to request:  Method:FIND_NODE Type:REQ_MSG MessageID:0x3CBFF25908EB/<��Y��  targetKey:38522637 F9B3092D 17F7D916 AE46883B F1E80DED
+[08/апр/2020:19:05:16,507] DEBUG MldhtService: <ERROR> Error [202] from: /199.168.97.146:6881 Message: "Server Error"
+[08/апр/2020:19:05:16,836] DEBUG MldhtService: <ERROR> received non-response [ Method:FIND_NODE Type:ERR_MSG MessageID:0xCAB78E5021D1/���P!�   code:202 errormsg: 'Server Error' id:null] in response to request:  Method:FIND_NODE Type:REQ_MSG MessageID:0xCAB78E5021D1/���P!�  targetKey:38522637 F9B3092D 17F7D916 AE46883B F1E80DED
+[08/апр/2020:19:05:16,837] DEBUG MldhtService: <ERROR> Error [202] from: /23.250.91.130:6881 Message: "Server Error"
+[08/апр/2020:19:05:17,074] DEBUG MldhtService: <ERROR> received non-response [ Method:FIND_NODE Type:ERR_MSG MessageID:0xE9E2DB1C0FFB/������   code:202 errormsg: 'Server Error' id:null] in response to request:  Method:FIND_NODE Type:REQ_MSG MessageID:0xE9E2DB1C0FFB/������  targetKey:3AA7D743 49815E2F 35C6A545 23B1E10D ECCB67BB
+[08/апр/2020:19:05:17,074] DEBUG MldhtService: <ERROR> Error [202] from: /23.225.240.82:6881 Message: "Server Error"
+[08/апр/2020:19:05:17,240] ERROR MldhtService: Unexpected DHT error
+java.net.SocketException: Network dropped connection on reset: no further information
+	at sun.nio.ch.DatagramChannelImpl.receive0(Native Method)
+	at sun.nio.ch.DatagramChannelImpl.receiveIntoNativeBuffer(DatagramChannelImpl.java:414)
+	at sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:392)
+	at sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:345)
+	at lbms.plugins.mldht.kad.RPCServer$SocketHandler.readEvent(RPCServer.java:710)
+	at lbms.plugins.mldht.kad.RPCServer$SocketHandler.selectionEvent(RPCServer.java:697)
+	at lbms.plugins.mldht.utils.NIOConnectionManager.processSelected(NIOConnectionManager.java:83)
+	at lbms.plugins.mldht.utils.NIOConnectionManager.selectLoop(NIOConnectionManager.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[08/апр/2020:19:05:17,592] DEBUG MldhtService: <ERROR> received non-response [ Method:FIND_NODE Type:ERR_MSG MessageID:0x77034A33BF37/w�J3�7   code:202 errormsg: 'Server Error' id:null] in response to request:  Method:FIND_NODE Type:REQ_MSG MessageID:0x77034A33BF37/w�J3�7  targetKey:38502A54 49D0E0B1 FA28D79B 9BDBA8B7 50F13C95
+[08/апр/2020:19:05:17,594] DEBUG MldhtService: <ERROR> Error [202] from: /139.162.168.10:6881 Message: "Server Error"
+[08/апр/2020:19:05:18,042] ERROR MldhtService: Unexpected DHT error
+java.net.SocketException: Network dropped connection on reset: no further information
+	at sun.nio.ch.DatagramChannelImpl.receive0(Native Method)
+	at sun.nio.ch.DatagramChannelImpl.receiveIntoNativeBuffer(DatagramChannelImpl.java:414)
+	at sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:392)
+	at sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:345)
+	at lbms.plugins.mldht.kad.RPCServer$SocketHandler.readEvent(RPCServer.java:710)
+	at lbms.plugins.mldht.kad.RPCServer$SocketHandler.selectionEvent(RPCServer.java:697)
+	at lbms.plugins.mldht.utils.NIOConnectionManager.processSelected(NIOConnectionManager.java:83)
+	at lbms.plugins.mldht.utils.NIOConnectionManager.selectLoop(NIOConnectionManager.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[08/апр/2020:19:05:18,044] ERROR MldhtService: Unexpected DHT error
+java.net.SocketException: Network dropped connection on reset: no further information
+	at sun.nio.ch.DatagramChannelImpl.receive0(Native Method)
+	at sun.nio.ch.DatagramChannelImpl.receiveIntoNativeBuffer(DatagramChannelImpl.java:414)
+	at sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:392)
+	at sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:345)
+	at lbms.plugins.mldht.kad.RPCServer$SocketHandler.readEvent(RPCServer.java:710)
+	at lbms.plugins.mldht.kad.RPCServer$SocketHandler.selectionEvent(RPCServer.java:697)
+	at lbms.plugins.mldht.utils.NIOConnectionManager.processSelected(NIOConnectionManager.java:83)
+	at lbms.plugins.mldht.utils.NIOConnectionManager.selectLoop(NIOConnectionManager.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[08/апр/2020:19:05:18,302] ERROR MldhtService: Unexpected DHT error
+java.net.SocketException: Network dropped connection on reset: no further information
+	at sun.nio.ch.DatagramChannelImpl.receive0(Native Method)
+	at sun.nio.ch.DatagramChannelImpl.receiveIntoNativeBuffer(DatagramChannelImpl.java:414)
+	at sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:392)
+	at sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:345)
+	at lbms.plugins.mldht.kad.RPCServer$SocketHandler.readEvent(RPCServer.java:710)
+	at lbms.plugins.mldht.kad.RPCServer$SocketHandler.selectionEvent(RPCServer.java:697)
+	at lbms.plugins.mldht.utils.NIOConnectionManager.processSelected(NIOConnectionManager.java:83)
+	at lbms.plugins.mldht.utils.NIOConnectionManager.selectLoop(NIOConnectionManager.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[08/апр/2020:19:05:27,561] DEBUG MldhtService: <ERROR> not sure how to handle message  Method:UNKNOWN Type:RSP_MSG MessageID:0x09B5BD27D299/���'��  
+[08/апр/2020:19:05:28,519] ERROR MldhtService: Unexpected DHT error
+java.net.SocketException: Network dropped connection on reset: no further information
+	at sun.nio.ch.DatagramChannelImpl.receive0(Native Method)
+	at sun.nio.ch.DatagramChannelImpl.receiveIntoNativeBuffer(DatagramChannelImpl.java:414)
+	at sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:392)
+	at sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:345)
+	at lbms.plugins.mldht.kad.RPCServer$SocketHandler.readEvent(RPCServer.java:710)
+	at lbms.plugins.mldht.kad.RPCServer$SocketHandler.selectionEvent(RPCServer.java:697)
+	at lbms.plugins.mldht.utils.NIOConnectionManager.processSelected(NIOConnectionManager.java:83)
+	at lbms.plugins.mldht.utils.NIOConnectionManager.selectLoop(NIOConnectionManager.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[08/апр/2020:19:05:28,987] DEBUG MldhtService: <ERROR> not sure how to handle message  Method:UNKNOWN Type:RSP_MSG MessageID:0x6C501398BAE5/lP����  
+[08/апр/2020:19:05:33,289] DEBUG MldhtService: <INFO> Estimator: new estimate:78 raw:6.285746485320564 error:0.7155824207415068
+[08/апр/2020:19:05:36,095] DEBUG MldhtService: <INFO> Estimator: new estimate:626 raw:9.29058172237171 error:0.7378130785972496
+[08/апр/2020:19:05:36,169] DEBUG MldhtService: <INFO> Estimator: new estimate:3995 raw:11.964079741845824 error:0.7442162358359955
+[08/апр/2020:19:05:36,374] DEBUG MldhtService: <INFO> Estimator: new estimate:19090 raw:14.22055246787195 error:0.7418318617402201
+[08/апр/2020:19:05:36,410] DEBUG MldhtService: <INFO> Estimator: new estimate:57264 raw:15.80535526868088 error:0.7322538679378342
+[08/апр/2020:19:05:36,559] DEBUG MldhtService: <INFO> Estimator: new estimate:132549 raw:17.016170180565858 error:0.7195014612864535
+[08/апр/2020:19:05:36,569] DEBUG MldhtService: <INFO> Estimator: new estimate:235064 raw:17.84269469368493 error:0.7041126934391079
+[08/апр/2020:19:05:38,692] DEBUG MldhtService: <INFO> Estimator: new estimate:430724 raw:18.716404269432953 error:0.6894854012771368
+[08/апр/2020:19:05:38,725] DEBUG MldhtService: <INFO> Estimator: new estimate:638050 raw:19.283310631771577 error:0.6730509067584726
+[08/апр/2020:19:05:40,032] DEBUG MldhtService: <INFO> Estimator: new estimate:1032321 raw:19.977461559865155 error:0.658105950132346
+[08/апр/2020:19:05:41,128] DEBUG MldhtService: <INFO> Estimator: new estimate:1391014 raw:20.40770561822901 error:0.6416767423017301
+[08/апр/2020:19:07:18,109] ERROR MldhtService: Unexpected DHT error
+java.net.SocketException: Network dropped connection on reset: no further information
+	at sun.nio.ch.DatagramChannelImpl.receive0(Native Method)
+	at sun.nio.ch.DatagramChannelImpl.receiveIntoNativeBuffer(DatagramChannelImpl.java:414)
+	at sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:392)
+	at sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:345)
+	at lbms.plugins.mldht.kad.RPCServer$SocketHandler.readEvent(RPCServer.java:710)
+	at lbms.plugins.mldht.kad.RPCServer$SocketHandler.selectionEvent(RPCServer.java:697)
+	at lbms.plugins.mldht.utils.NIOConnectionManager.processSelected(NIOConnectionManager.java:83)
+	at lbms.plugins.mldht.utils.NIOConnectionManager.selectLoop(NIOConnectionManager.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[08/апр/2020:19:07:27,626] ERROR MldhtService: Unexpected DHT error
+java.net.SocketException: Network dropped connection on reset: no further information
+	at sun.nio.ch.DatagramChannelImpl.receive0(Native Method)
+	at sun.nio.ch.DatagramChannelImpl.receiveIntoNativeBuffer(DatagramChannelImpl.java:414)
+	at sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:392)
+	at sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:345)
+	at lbms.plugins.mldht.kad.RPCServer$SocketHandler.readEvent(RPCServer.java:710)
+	at lbms.plugins.mldht.kad.RPCServer$SocketHandler.selectionEvent(RPCServer.java:697)
+	at lbms.plugins.mldht.utils.NIOConnectionManager.processSelected(NIOConnectionManager.java:83)
+	at lbms.plugins.mldht.utils.NIOConnectionManager.selectLoop(NIOConnectionManager.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[08/апр/2020:19:07:47,700] ERROR MldhtService: Unexpected DHT error
+java.net.SocketException: Network dropped connection on reset: no further information
+	at sun.nio.ch.DatagramChannelImpl.receive0(Native Method)
+	at sun.nio.ch.DatagramChannelImpl.receiveIntoNativeBuffer(DatagramChannelImpl.java:414)
+	at sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:392)
+	at sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:345)
+	at lbms.plugins.mldht.kad.RPCServer$SocketHandler.readEvent(RPCServer.java:710)
+	at lbms.plugins.mldht.kad.RPCServer$SocketHandler.selectionEvent(RPCServer.java:697)
+	at lbms.plugins.mldht.utils.NIOConnectionManager.processSelected(NIOConnectionManager.java:83)
+	at lbms.plugins.mldht.utils.NIOConnectionManager.selectLoop(NIOConnectionManager.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[08/апр/2020:19:08:14,967] DEBUG MldhtService: <INFO> Initated DHT shutdown
+[08/апр/2020:19:08:14,976] DEBUG MldhtService: <INFO> stopping servers
+[08/апр/2020:19:08:14,988] DEBUG MldhtService: <INFO> persisting routing table on shutdown
+[08/апр/2020:19:08:15,041] DEBUG MldhtService: <INFO> table persisted

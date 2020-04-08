@@ -1,0 +1,313 @@
+[08/апр/2020:19:04:53,048] INFO  BtRuntimeBuilder: Loading standard extension module bt.peer.lan.LocalServiceDiscoveryModule
+[08/апр/2020:19:04:53,050] INFO  BtRuntimeBuilder: Loading standard extension module bt.peerexchange.PeerExchangeModule
+[08/апр/2020:19:04:53,052] INFO  BtRuntimeBuilder: Overriding auto-loaded module bt.dht.DHTModule
+[08/апр/2020:19:04:53,053] INFO  BtRuntimeBuilder: Auto-loading module bt.tracker.http.HttpTrackerModule with default configuration
+[08/апр/2020:19:04:56,150] INFO  SocketChannelConnectionAcceptor: Opening server channel for incoming connections @ /192.168.218.63:6891
+[08/апр/2020:19:07:45,628] ERROR LocalServiceDiscoveryPeerSourceFactory: Failed to parse message
+java.lang.IllegalStateException: Can't build message: missing cookie
+	at bt.peer.lan.AnnounceMessage$Builder.build(AnnounceMessage.java:225)
+	at bt.peer.lan.AnnounceMessage.parse(AnnounceMessage.java:175)
+	at bt.peer.lan.AnnounceMessage.readFrom(AnnounceMessage.java:125)
+	at bt.peer.lan.LocalServiceDiscoveryPeerSourceFactory.lambda$collectPeers$1(LocalServiceDiscoveryPeerSourceFactory.java:100)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at bt.peer.lan.LocalServiceDiscoveryPeerSourceFactory.collectPeers(LocalServiceDiscoveryPeerSourceFactory.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[08/апр/2020:19:08:10,022] ERROR DataReceivingLoop: Failed to process key
+java.lang.RuntimeException: Unexpected I/O error
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:83)
+	at bt.net.pipeline.DefaultChannelPipeline$DefaultChannelHandlerContext.fireChannelReady(DefaultChannelPipeline.java:192)
+	at bt.net.DataReceivingLoop.processKey(DataReceivingLoop.java:161)
+	at bt.net.DataReceivingLoop.run(DataReceivingLoop.java:126)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at bt.net.pipeline.SocketChannelHandler.processInboundData(SocketChannelHandler.java:118)
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:80)
+	... 6 more
+[08/апр/2020:19:08:14,837] ERROR DataReceivingLoop: Failed to process key
+java.lang.RuntimeException: Unexpected I/O error
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:83)
+	at bt.net.pipeline.DefaultChannelPipeline$DefaultChannelHandlerContext.fireChannelReady(DefaultChannelPipeline.java:192)
+	at bt.net.DataReceivingLoop.processKey(DataReceivingLoop.java:161)
+	at bt.net.DataReceivingLoop.run(DataReceivingLoop.java:126)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.EOFException
+	at bt.net.pipeline.SocketChannelHandler.processInboundData(SocketChannelHandler.java:136)
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:80)
+	... 6 more
+[08/апр/2020:19:08:14,845] ERROR DataReceivingLoop: Failed to process key
+java.lang.RuntimeException: Unexpected I/O error
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:83)
+	at bt.net.pipeline.DefaultChannelPipeline$DefaultChannelHandlerContext.fireChannelReady(DefaultChannelPipeline.java:192)
+	at bt.net.DataReceivingLoop.processKey(DataReceivingLoop.java:161)
+	at bt.net.DataReceivingLoop.run(DataReceivingLoop.java:126)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.EOFException
+	at bt.net.pipeline.SocketChannelHandler.processInboundData(SocketChannelHandler.java:136)
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:80)
+	... 6 more
+[08/апр/2020:19:08:14,861] ERROR DataReceivingLoop: Failed to process key
+java.lang.RuntimeException: Unexpected I/O error
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:83)
+	at bt.net.pipeline.DefaultChannelPipeline$DefaultChannelHandlerContext.fireChannelReady(DefaultChannelPipeline.java:192)
+	at bt.net.DataReceivingLoop.processKey(DataReceivingLoop.java:161)
+	at bt.net.DataReceivingLoop.run(DataReceivingLoop.java:126)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.EOFException
+	at bt.net.pipeline.SocketChannelHandler.processInboundData(SocketChannelHandler.java:136)
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:80)
+	... 6 more
+[08/апр/2020:19:08:14,876] ERROR DataReceivingLoop: Failed to process key
+java.lang.RuntimeException: Unexpected I/O error
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:83)
+	at bt.net.pipeline.DefaultChannelPipeline$DefaultChannelHandlerContext.fireChannelReady(DefaultChannelPipeline.java:192)
+	at bt.net.DataReceivingLoop.processKey(DataReceivingLoop.java:161)
+	at bt.net.DataReceivingLoop.run(DataReceivingLoop.java:126)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.EOFException
+	at bt.net.pipeline.SocketChannelHandler.processInboundData(SocketChannelHandler.java:136)
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:80)
+	... 6 more
+[08/апр/2020:19:08:14,877] ERROR DataReceivingLoop: Failed to process key
+java.lang.RuntimeException: Unexpected I/O error
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:83)
+	at bt.net.pipeline.DefaultChannelPipeline$DefaultChannelHandlerContext.fireChannelReady(DefaultChannelPipeline.java:192)
+	at bt.net.DataReceivingLoop.processKey(DataReceivingLoop.java:161)
+	at bt.net.DataReceivingLoop.run(DataReceivingLoop.java:126)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.EOFException
+	at bt.net.pipeline.SocketChannelHandler.processInboundData(SocketChannelHandler.java:136)
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:80)
+	... 6 more
+[08/апр/2020:19:08:14,877] ERROR DataReceivingLoop: Failed to process key
+java.lang.RuntimeException: Unexpected I/O error
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:83)
+	at bt.net.pipeline.DefaultChannelPipeline$DefaultChannelHandlerContext.fireChannelReady(DefaultChannelPipeline.java:192)
+	at bt.net.DataReceivingLoop.processKey(DataReceivingLoop.java:161)
+	at bt.net.DataReceivingLoop.run(DataReceivingLoop.java:126)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.EOFException
+	at bt.net.pipeline.SocketChannelHandler.processInboundData(SocketChannelHandler.java:136)
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:80)
+	... 6 more
+[08/апр/2020:19:08:14,878] ERROR DataReceivingLoop: Failed to process key
+java.lang.RuntimeException: Unexpected I/O error
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:83)
+	at bt.net.pipeline.DefaultChannelPipeline$DefaultChannelHandlerContext.fireChannelReady(DefaultChannelPipeline.java:192)
+	at bt.net.DataReceivingLoop.processKey(DataReceivingLoop.java:161)
+	at bt.net.DataReceivingLoop.run(DataReceivingLoop.java:126)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.EOFException
+	at bt.net.pipeline.SocketChannelHandler.processInboundData(SocketChannelHandler.java:136)
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:80)
+	... 6 more
+[08/апр/2020:19:08:14,885] ERROR DataReceivingLoop: Failed to process key
+java.lang.RuntimeException: Unexpected I/O error
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:83)
+	at bt.net.pipeline.DefaultChannelPipeline$DefaultChannelHandlerContext.fireChannelReady(DefaultChannelPipeline.java:192)
+	at bt.net.DataReceivingLoop.processKey(DataReceivingLoop.java:161)
+	at bt.net.DataReceivingLoop.run(DataReceivingLoop.java:126)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.EOFException
+	at bt.net.pipeline.SocketChannelHandler.processInboundData(SocketChannelHandler.java:136)
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:80)
+	... 6 more
+[08/апр/2020:19:08:14,893] ERROR DataReceivingLoop: Failed to process key
+java.lang.RuntimeException: Unexpected I/O error
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:83)
+	at bt.net.pipeline.DefaultChannelPipeline$DefaultChannelHandlerContext.fireChannelReady(DefaultChannelPipeline.java:192)
+	at bt.net.DataReceivingLoop.processKey(DataReceivingLoop.java:161)
+	at bt.net.DataReceivingLoop.run(DataReceivingLoop.java:126)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.EOFException
+	at bt.net.pipeline.SocketChannelHandler.processInboundData(SocketChannelHandler.java:136)
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:80)
+	... 6 more
+[08/апр/2020:19:08:14,896] ERROR DataReceivingLoop: Failed to process key
+java.lang.RuntimeException: Unexpected I/O error
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:83)
+	at bt.net.pipeline.DefaultChannelPipeline$DefaultChannelHandlerContext.fireChannelReady(DefaultChannelPipeline.java:192)
+	at bt.net.DataReceivingLoop.processKey(DataReceivingLoop.java:161)
+	at bt.net.DataReceivingLoop.run(DataReceivingLoop.java:126)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.EOFException
+	at bt.net.pipeline.SocketChannelHandler.processInboundData(SocketChannelHandler.java:136)
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:80)
+	... 6 more
+[08/апр/2020:19:08:14,932] ERROR DataReceivingLoop: Failed to process key
+java.lang.RuntimeException: Unexpected I/O error
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:83)
+	at bt.net.pipeline.DefaultChannelPipeline$DefaultChannelHandlerContext.fireChannelReady(DefaultChannelPipeline.java:192)
+	at bt.net.DataReceivingLoop.processKey(DataReceivingLoop.java:161)
+	at bt.net.DataReceivingLoop.run(DataReceivingLoop.java:126)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.EOFException
+	at bt.net.pipeline.SocketChannelHandler.processInboundData(SocketChannelHandler.java:136)
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:80)
+	... 6 more
+[08/апр/2020:19:08:14,941] ERROR DataReceivingLoop: Failed to process key
+java.lang.RuntimeException: Unexpected I/O error
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:83)
+	at bt.net.pipeline.DefaultChannelPipeline$DefaultChannelHandlerContext.fireChannelReady(DefaultChannelPipeline.java:192)
+	at bt.net.DataReceivingLoop.processKey(DataReceivingLoop.java:161)
+	at bt.net.DataReceivingLoop.run(DataReceivingLoop.java:126)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.EOFException
+	at bt.net.pipeline.SocketChannelHandler.processInboundData(SocketChannelHandler.java:136)
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:80)
+	... 6 more
+[08/апр/2020:19:08:14,967] ERROR DataReceivingLoop: Failed to process key
+java.lang.RuntimeException: Unexpected I/O error
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:83)
+	at bt.net.pipeline.DefaultChannelPipeline$DefaultChannelHandlerContext.fireChannelReady(DefaultChannelPipeline.java:192)
+	at bt.net.DataReceivingLoop.processKey(DataReceivingLoop.java:161)
+	at bt.net.DataReceivingLoop.run(DataReceivingLoop.java:126)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.EOFException
+	at bt.net.pipeline.SocketChannelHandler.processInboundData(SocketChannelHandler.java:136)
+	at bt.net.pipeline.SocketChannelHandler.read(SocketChannelHandler.java:80)
+	... 6 more
+[08/апр/2020:19:08:14,975] ERROR IncomingConnectionListener: Unexpected error
+java.lang.RuntimeException: Incoming channel @ /192.168.218.63:6891 has been closed, will stop accepting incoming connections...
+	at bt.net.SocketChannelConnectionAcceptor.accept(SocketChannelConnectionAcceptor.java:108)
+	at bt.net.IncomingConnectionListener.lambda$null$0(IncomingConnectionListener.java:60)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[08/апр/2020:19:08:14,974] INFO  DataReceivingLoop: Selector has been closed, will stop receiving messages...
+[08/апр/2020:19:08:15,042] ERROR TerminateOnErrorProcessingStage: Unexpected error during processing, will finalize context and terminate...
+java.lang.RuntimeException: Unexpectedly interrupted
+	at bt.processor.torrent.ProcessTorrentStage.doExecute(ProcessTorrentStage.java:70)
+	at bt.processor.torrent.ProcessTorrentStage.doExecute(ProcessTorrentStage.java:34)
+	at bt.processor.TerminateOnErrorProcessingStage.doExecute(TerminateOnErrorProcessingStage.java:38)
+	at bt.processor.RoutingProcessingStage.execute(RoutingProcessingStage.java:39)
+	at bt.processor.ChainProcessor.doExecute(ChainProcessor.java:112)
+	at bt.processor.ChainProcessor.executeStage(ChainProcessor.java:96)
+	at bt.processor.ChainProcessor.executeStage(ChainProcessor.java:98)
+	at bt.processor.ChainProcessor.executeStage(ChainProcessor.java:98)
+	at bt.processor.ChainProcessor.executeStage(ChainProcessor.java:98)
+	at bt.processor.ChainProcessor.executeStage(ChainProcessor.java:98)
+	at bt.processor.ChainProcessor.lambda$process$0(ChainProcessor.java:81)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1626)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at bt.processor.torrent.ProcessTorrentStage.doExecute(ProcessTorrentStage.java:64)
+	... 14 more
+[08/апр/2020:19:08:15,049] WARN  MultiTracker: Unexpected error during interaction with the tracker: UdpTracker{trackerUrl=http://opentor.org:2710}
+bt.BtException: Failed to receive response from the tracker
+	at bt.tracker.udp.UdpMessageWorker.sendMessage(UdpMessageWorker.java:106)
+	at bt.tracker.udp.UdpMessageWorker.createSession(UdpMessageWorker.java:88)
+	at bt.tracker.udp.UdpMessageWorker.getSession(UdpMessageWorker.java:82)
+	at bt.tracker.udp.UdpMessageWorker.sendMessage(UdpMessageWorker.java:77)
+	at bt.tracker.udp.UdpTracker$1.announceEvent(UdpTracker.java:142)
+	at bt.tracker.udp.UdpTracker$1.stop(UdpTracker.java:112)
+	at bt.tracker.MultiTracker$1.lambda$stop$1(MultiTracker.java:80)
+	at bt.tracker.MultiTracker$1.tryForAllTrackers(MultiTracker.java:125)
+	at bt.tracker.MultiTracker$1.stop(MultiTracker.java:80)
+	at bt.torrent.TrackerAnnouncer.lambda$stop$1(TrackerAnnouncer.java:88)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at bt.torrent.TrackerAnnouncer.stop(TrackerAnnouncer.java:86)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at bt.processor.torrent.TorrentContextFinalizer.finalizeContext(TorrentContextFinalizer.java:37)
+	at bt.processor.torrent.TorrentContextFinalizer.finalizeContext(TorrentContextFinalizer.java:24)
+	at bt.processor.ChainProcessor.lambda$doExecute$2(ChainProcessor.java:134)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at bt.processor.ChainProcessor.doExecute(ChainProcessor.java:134)
+	at bt.processor.ChainProcessor.executeStage(ChainProcessor.java:96)
+	at bt.processor.ChainProcessor.executeStage(ChainProcessor.java:98)
+	at bt.processor.ChainProcessor.executeStage(ChainProcessor.java:98)
+	at bt.processor.ChainProcessor.executeStage(ChainProcessor.java:98)
+	at bt.processor.ChainProcessor.executeStage(ChainProcessor.java:98)
+	at bt.processor.ChainProcessor.lambda$process$0(ChainProcessor.java:81)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1626)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.CompletableFuture$AsyncSupply@64625ed5 rejected from java.util.concurrent.ThreadPoolExecutor@76101881[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 3]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at java.util.concurrent.Executors$DelegatedExecutorService.execute(Executors.java:668)
+	at java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1604)
+	at java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:1830)
+	at bt.tracker.udp.UdpMessageWorker.sendMessage(UdpMessageWorker.java:95)
+	... 27 more
+[08/апр/2020:19:08:30,066] WARN  MultiTracker: Unexpected error during interaction with the tracker: UdpTracker{trackerUrl=http://tracker.coppersurfer.tk:6969}
+bt.BtException: Failed to receive response from the tracker
+	at bt.tracker.udp.UdpMessageWorker.sendMessage(UdpMessageWorker.java:101)
+	at bt.tracker.udp.UdpMessageWorker.sendMessage(UdpMessageWorker.java:103)
+	at bt.tracker.udp.UdpMessageWorker.createSession(UdpMessageWorker.java:88)
+	at bt.tracker.udp.UdpMessageWorker.getSession(UdpMessageWorker.java:82)
+	at bt.tracker.udp.UdpMessageWorker.sendMessage(UdpMessageWorker.java:77)
+	at bt.tracker.udp.UdpTracker$1.announceEvent(UdpTracker.java:142)
+	at bt.tracker.udp.UdpTracker$1.stop(UdpTracker.java:112)
+	at bt.tracker.MultiTracker$1.lambda$stop$1(MultiTracker.java:80)
+	at bt.tracker.MultiTracker$1.tryForAllTrackers(MultiTracker.java:125)
+	at bt.tracker.MultiTracker$1.stop(MultiTracker.java:80)
+	at bt.torrent.TrackerAnnouncer.lambda$stop$1(TrackerAnnouncer.java:88)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at bt.torrent.TrackerAnnouncer.stop(TrackerAnnouncer.java:86)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at bt.processor.torrent.TorrentContextFinalizer.finalizeContext(TorrentContextFinalizer.java:37)
+	at bt.processor.torrent.TorrentContextFinalizer.finalizeContext(TorrentContextFinalizer.java:24)
+	at bt.processor.ChainProcessor.lambda$doExecute$2(ChainProcessor.java:134)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at bt.processor.ChainProcessor.doExecute(ChainProcessor.java:134)
+	at bt.processor.ChainProcessor.executeStage(ChainProcessor.java:96)
+	at bt.processor.ChainProcessor.executeStage(ChainProcessor.java:98)
+	at bt.processor.ChainProcessor.executeStage(ChainProcessor.java:98)
+	at bt.processor.ChainProcessor.executeStage(ChainProcessor.java:98)
+	at bt.processor.ChainProcessor.executeStage(ChainProcessor.java:98)
+	at bt.processor.ChainProcessor.lambda$process$0(ChainProcessor.java:81)
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1626)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1771)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915)
+	at bt.tracker.udp.UdpMessageWorker.sendMessage(UdpMessageWorker.java:96)
+	... 28 more
